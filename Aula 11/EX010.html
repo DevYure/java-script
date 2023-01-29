@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de nota</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        body {
+            background-color: lightgray;
+        }
+        body > div {
+            display: flex;
+            flex-direction: column;
+        }
+        div > input{
+            height: 25px;
+            width: 400px;
+            border-radius: 25px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Saiba aqui, se você esta provado ou reprovado
+    </h1>
+    <div>
+        1 Bimestre<input type="number" name="nota1" id="nota1">
+        2 Bimestre<input type="number" name="nota2" id="nota2">
+        3 Bimestre<input type="number" name="nota3" id="nota3">
+        4 Bimestre<input type="number" name="nota4" id="nota4">
+        <input type="button" value="Resultado" onclick="media()">
+    </div>
+    <div id="res">
+        Reultado
+    </div>
+    <script>
+        function media(){
+            var nota1 = window.document.getElementById('nota1')
+            var nota2 = window.document.getElementById('nota2')
+            var nota3 = window.document.getElementById('nota3')
+            var nota4 = window.document.getElementById('nota4')
+            var res = window.document.getElementById('res')
+            var n1 = Number(nota1.value)
+            var n2 = Number(nota2.value)
+            var n3 = Number(nota3.value)
+            var n4 = Number(nota4.value)
+            var media = (n1+n2+n3+n4)/4
+            res.innerHTML = (`Sua media atual e ${media}`)
+            if(media >= 7) {
+                res.innerHTML += 'parabés você passo'
+            }
+            else{
+                res.innerHTML += 'Você esta de Recuperação'
+            }
+        }
+    </script>
+</body>
+</html>

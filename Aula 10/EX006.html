@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documente DOM Na paratica</title>
+    <style>
+        body{
+            background-color: lightcyan;
+            color: black;
+        }
+        h1 {
+            font-size: 2em;
+            font-style: normal;
+            text-align: center;
+        }
+        div#menssagem{
+            background-color: lightslategray;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Eu Vou ser um dos melhores programadore 
+    </h1>
+    <h2>
+        Apresentação
+    </h2>
+    <p>
+        Meu nome e Yure, Tenho 24 anos e Estuo no processo de formação para me tonar um programador web,
+    </p>
+    <p>
+        Estou terminando o css e java script.<br>
+        Dessa Maneira Estou a poucos passo de conseguir meus obj.
+    </p>
+    <div id="menssagem" onmouseenter="">
+        <p>Click Aqui!!!!!</p>
+    </div>
+    <script>
+        var m =window.document.getElementById('menssagem')
+        m .addEventListener('click',clickar)
+        m .addEventListener('mouseout',sair)
+        m .addEventListener('mouseenter',entrar)
+
+        function clickar() {
+            m .innerText = 'Dessa vez foi'
+            m .style.backgroundColor = 'blue'
+            m .style.color = 'red'
+        }
+
+        function entrar() {
+            m .innerText = 'voce entro'
+            m .style.backgroundColor = 'red'
+            m .style.color = 'black'
+        }
+
+        function sair() {
+            m .innerText = 'você saiu'
+            m .style.backgroundColor = 'lightslategray'
+            m .style.color = 'white'
+        }
+
+    </script>
+</body>
+</html>

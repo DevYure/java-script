@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Javascript</title>
+    <style>
+        h1{
+            font-size: 20pt;
+            background-color: lightgreen;
+            width: 350px;
+            height: 350px;
+            line-height: 350px;
+            text-align: center;
+        }
+        body > div {
+            font-size: 16pt;
+            background-color: rgba(149, 45, 247, 0.548);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Nossa Calculadora
+    </h1>
+    <input type="number" name="tn1" id="tn1">
+    <input type="number" name="tn2" id="tn2">
+    <input type="button" value="soma" onclick="soma()">
+    <div id="res">Resltado!!!</div>
+    <script>
+        function soma(){
+            var tn1 = window.document.getElementById('tn1')
+            var tn2 = window.document.getElementById('tn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} é ${n2} e igual a <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>

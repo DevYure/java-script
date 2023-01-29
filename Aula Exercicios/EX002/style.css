@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(70, 142, 236);
+}
+
+body > header > h1{
+    text-align: center;
+    font-size: 3.5em;
+    color: white;
+    margin-top: 40px;
+}
+
+body > main {
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.texto1{
+    text-align: left;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.texto2{
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.botao{
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.botao2{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    font: lighter 1.5em italic;
+}
+
+footer {
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+}
+
+.center{
+    padding-left: 10px;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.foto{
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}

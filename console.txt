@@ -1,0 +1,43 @@
+para manipular e colocarmos algo na nossa tela usase a tag                /Obs : todas palagras tenque esta dentro de aspas ""
+
+console.log
+
+para anotações no codigo :
+comentario em uma unica linha //
+comentarios com varias linhas /**/
+
+tipos de dados
+
+number.
+String.
+Bollear.
+null.
+Object.
+Unifiner.
+Symbol.
+
+operadores matematicos
+
++ = Adição
+- = Subtração
+* = Multiplicação
+/ = Divisão
+% = Restante
+
+Operadores 
+
+length = para imprimir o numero de caracteres
+. = par imprimir no console
+
+Metodos
+
+.toUpperCase = devolver com letra maiuscula
+
+.startswith  = afirmar se determinado dado e verdadeiro ou falso
+
+.Trim = usado para retirar os espaçoes desnecessarios.
+
+oBjetos incorporados
+math = tipo de obseto incorporado
+math.random = pera um numero aleatorio em 0 e 1
+math.floor = pega o numero decial e arredonda par abaixo 

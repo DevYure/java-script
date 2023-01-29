@@ -1,0 +1,192 @@
+Como fazer o tratamendo de de dados ?
+
+eu vo colcoar o seginte comando
+
+var nome = window.promt('Qual o seu nome?')
+
+isso vai salvar na varial "nome" rudo o que eu colocar no promt no navegador
+
+para juntar coisas na outra usa-se a concatenação = +
+
+usando as combições de var nome = window.prompt('Qual o seu nome?') // window.alert ('Seja muito bvem vindo ' + nome)
+assim dando a oportunidade de comprimentar qualquer nome
+
+exeste em determinados estados a necessidade de converção de um tipo de dado em outro 
+
+string em number
+para converter em um numero interi usar o Number.parselnt()
+para converter em numero real usar o Number.parseFloat() ou seja todo e qualquer número
+
+number em string
+agora para converter um number em string só usar o string no inicio ou usar n.tostring 
+ex var nome = window.prompt ('Qual o seu nome?') // window.alert ('Seja muito bem vindo ') + nome.toString
+
+
+para cira um contesto pode se diser assim 
+var nome = yure
+var idade = 24 anos
+var nota = 9 
+" O aluno " + nome + " Com " + idade + " Recebel a nota " + nota
+para escrever a frase 
+O aluno yure com 24 anos recebel a nota 9 
+
+
+para facilitar podemos usar o ${} mas apra isso e necessario que se começe com a crash (``)
+sendo assim : ` O aluno ${nome} com idade igual a ${idade} recebel a nota ${nota}`
+ficando : `O aluno yure com idade igual a 24 anos recebel a nota 9`
+
+Alguns tratamento de dados pdoe ser usados outros 3 tipos
+.length = para dizer quantas letreas tem seu nome
+.toUpperCase() = para deixar o seu nome em maiusculo
+.toLowerCase() = para deixar o nome em minusculo
+Document.white = para exbir o codigo no proprio site
+toFixed() = para deixar o numero com mais casas decimais
+replace() = para trocar algo por alguma coisa
+.toLocaleString ('pt-BR', {style: 'currency', currency:'BRL'}) para colcoar qualquer salario em qualquer moeda
+
+
+Operadores 
+
+Familia de Operadores 
+
+Aritimeticos : "+","-","*","/","**","%".
+ orden de Atribuição de sina de precedencia =  + ();**;/*%;+-
+
+relacionais
+lógicos
+ternarios
+
+auto atribuição e quando eu pego uma variavel determinada e a coloc no seu luar o resutlado matematico 
+var n = 4+3 = 7
+n   = 7
+n= n-3 = 4
+n=4
+n+=5
+n=9
+n-=3
+n=6
+n/=2
+n=3
+n**=3
+n=27
+n%=9
+n=0
+n*=9
+n=0
+
+O Icremento serve par atribuir de maneira ordinal um numer Ex:
+n = 9
+n++
+n=10
+n--
+n=9
+
+Opeeradores Relacionais
+Todo resultado desses operadores sera boolear ou seja verdadeiro(true) ou Falso(false)
+
+> = maior que
+< = menor que 
+>= = maior ou igual a que
+<= = menor ou igual a que 
+== = igual a que
+!= difirente de que
+
+Operador de identidade ou operadores restritos
+ ==== identico a que 
+!== diferenti identico a que 
+
+Operadores Lógicos
+
+! = \true=false\false=true\ = negação = não
+&& = |true + true = true|true + false = false| false + true = false| false + false = false| = conjução = é
+|| = |true + true = treu|true + false = true| false + true = true| false + false = true| = dijunção = ou
+
+ordem de resolução.
+primeiro valroes aritimeticos depois relacionais depois logicos
+
+ o perador ternario
+ ? :
+
+ DOM = Document Object Model
+
+Árvore DOM como fazer :
+window:
+Location :
+Document : html: Heard e Body 
+Hystori :
+
+
+Acesso a tags dentro da Arbore DOM
+por Marcas
+"getElementebytagname()" quando usar o [] par selecionar quando tem mais de um marcado. sua orde começa por 0
+Por ID
+"getElementebyid()"
+por nome
+"getElementebyname()"
+Por class
+"getElementebyclassname()"
+por seletor
+"queryselector()"
+"queryselectorALL()" nesse caso quando usar para id eusar "#" e par class "."
+ex = var tn2 window.document.queryselector('input#tn2')
+sendo input a classe
+e tn2  o id
+
+
+Ventos DOM
+
+eventos de MOUSE
+
+mouseenter
+mousemove
+mousedown
+mouseup
+click
+mouseout
+
+função
+bloco e evento
+
+para fazer um bloco {} usee os conchetes tudo que estiver ali dentro so sera efetuado apos um evendo.
+e antes das {} usar a function ex= function {}
+e essas funções carregão um nome ou seja o nome da função ou seja da ação q vai acontecer ex=function ação(){}
+
+para configurar o gatilho pode ser usado no propri html ou no javascript: sendo asim no exemplo usado one click
+ja que o evendo sera liberado ao clicar na função div.
+
+para adicionar evendo sem anecessidade de colocar muitas atribuições na mesma linha
+usar : addeventlistener
+
+para detectar erro você pode usar o dive tools do propio navegador
+
+treinar mais agora imput do usuario
+
+Condições
+tag para usar condição = if(condição)
+if = se
+else = se não
+
+tipos de condção
+condição simples qunado so tem if
+condição
+
+condição aninhada
+qunado eu ciro uma condição onde caso de uma delas não seja suprida crio outra condição para  tenter supire assim susessivamente
+tag usada 
+else if
+
+uma regra sempre quando for refirir a valores com idade, dinheiro, ano , mes, data de aniversario 
+sempre começe com o menor par o maior 
+
+condição multipla :
+ou seja ele faz x teste fixos e depois continua o fluxo do programa
+comando switch
+e para a divisão dos blocos case e default
+sempre que terminar um case se usar break
+
+para carregar uma foto e necessario usar a variavel para foto mais .src
+
+parar carregar cor de fundo e necessario a variavel mais .style.backgranudcolor
+
+
+
