@@ -4,6 +4,7 @@ function verificar(){
     var Feminino = document.getElementById('Feminino')
     var res = document.getElementById('texto')
     var img = document.getElementById('foto')
+    var cor = document.getElementById('cor-de-fundo')
     var nas = Number(data.value)
     var agora = new Date()
     var ano = agora.getFullYear()
@@ -12,6 +13,16 @@ function verificar(){
     var genero = ""
     if (sexo[0].checked){
         genero = "Homem"
+        function cor(){
+            while (sexo[0].checked){
+                cor.style.backgroundColor = 'rgb(70, 142, 236)'
+            }
+        }
+        function cor() {
+            while (sexo[1].checked){
+                cor.style.backgroundColor = '#ffb6c1'
+            }
+        }
         if (idade < 10){
             //criança
             img.src ='imagens/garoto menor de 10 .png'
