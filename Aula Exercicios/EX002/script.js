@@ -14,12 +14,12 @@ function verificar(){
     if (sexo[0].checked){
         genero = "Homem"
         function cor(){
-            while (sexo[0].checked){
+            while ( genero == sexo[0].checked){
                 cor.style.backgroundColor = 'rgb(70, 142, 236)'
             }
         }
         function cor() {
-            while (sexo[1].checked){
+            while ( genero == sexo[1].checked){
                 cor.style.backgroundColor = '#ffb6c1'
             }
         }
