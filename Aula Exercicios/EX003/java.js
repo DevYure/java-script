@@ -7,8 +7,8 @@ function contar(){
     var inicio2 = Number(inicio.value)
     var fim2 = Number(fim.value)
     var passos2 = Number (passos.value)
-    for( y = inicio2; y <=fim2;passos2){
-        resultado.innerHTML = ''
+    for( y = inicio2; y <=fim2; y += passos2){
+        resultado.innerHTML += `${y} `
     }
     texto.innerHTML = "Contando :"
 }
