@@ -54,5 +54,11 @@ input#contar{
 
 #resultado{
     font-size: 1.5em;
-    
+}
+
+#textoresultado {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 10px;
 }
