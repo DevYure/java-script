@@ -7,8 +7,14 @@ function contar(){
     var inicio2 = Number(inicio.value)
     var fim2 = Number(fim.value)
     var passos2 = Number (passos.value)
-    for( y = inicio2; y <=fim2; y += passos2){
-        resultado.innerHTML += `${y} `
+    if (inicio == 0 || fim == 0 || passos == 0){
+        window.alert("Sem dados cadastrado, por vafor prenchar novamente")
     }
-    texto.innerHTML = "Contando :"
+    else{
+        texto.innerHTML = "Contando :"
+        for( y = inicio2; y <=fim2; y += passos2){
+            resultado.innerHTML += `${y} `
+        }
+    }
+    
 }
