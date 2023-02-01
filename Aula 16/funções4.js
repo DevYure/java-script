@@ -1,9 +1,9 @@
 function fatorial(n){
-    fat = 1
+     let fat = 1
     for( let v = n; v > 1 ; v--){
         fat *= v
     }
     return fat
 }
 
-console.log(fatorial(9))
+console.log(fatorial(100))
