@@ -116,7 +116,7 @@ Document : html: Heard e Body
 Hystori :
 
 
-Acesso a tags dentro da Arbore DOM
+Acesso a tags dentro da Arvore DOM
 por Marcas
 "getElementebytagname()" quando usar o [] par selecionar quando tem mais de um marcado. sua orde começa por 0
 Por ID
