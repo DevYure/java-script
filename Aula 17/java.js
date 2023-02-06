@@ -1,10 +1,6 @@
 class Produto {
     Adicionar(){
         
-        this.id
-        this.name
-        this.valor
-        window.alert('Item Adicionado a Lista de Compras')
     }
 
     Remover(){
@@ -13,4 +9,3 @@ class Produto {
 }
 
 var produto = new Produto
-
