@@ -29,9 +29,7 @@ class Produto {
     }
 
     rescrever(produto){
-        let item = document.createElement('option')
-        item.text = `Produto: ${produto.nome} valor: ${produto.preço} id: ${produto.id}`
-        var tab = document.getElementById('tabela')
+        
     }
 
     verificar(produto){
