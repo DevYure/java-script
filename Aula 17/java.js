@@ -1,5 +1,5 @@
 class Produto {
-
+    
     criando(){
         this.id = 1
         this.arrayprodutos = [];
@@ -9,6 +9,7 @@ class Produto {
        let produto = this.dados()
        if(this.verificar(produto)){
         this.lista(produto)
+        this.rescrever(produto)
        }
     }
 
@@ -24,19 +25,13 @@ class Produto {
     }
 
     lista(){
-        this.arrayprodutos.push(produto)
         this.id++
-        this.rescrever()
     }
 
-    rescrever(){
-        let tabela = protudo.tabela
+    rescrever(produto){
         let item = document.createElement('option')
-        item.text = `O Produto Adiciondo foi ${produto.nome}`
-        tabela.appendChild('item')
-        let item2 = document.createElement('option')
-        item2.text = `O Preço  Adiciondo foi ${produto.preço}`
-        tabela.appendChild('item2')
+        item.text = `Produto: ${produto.nome} valor: ${produto.preço} id: ${produto.id}`
+        var tab = document.getElementById('tabela')
     }
 
     verificar(produto){
