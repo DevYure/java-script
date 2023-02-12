@@ -17,6 +17,7 @@ function adicionar() {
         tab.appendChild(item)
         numeros.push(n)
     }
+    console.log(numeros)
 }
 
 function verificar(){
